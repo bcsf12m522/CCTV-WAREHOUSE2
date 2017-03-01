@@ -415,7 +415,7 @@ select option {
 
 .navbar-collapse {
   padding: 0px;
-  border: 1px solid #a8a8a8;
+  border: none !important;
 }
 
 .groham-nav .navbar-toggle {
@@ -428,17 +428,18 @@ select option {
 }
 
 .groham-nav .nav > li {
-  border-right: 1px solid #a8a8a8;
+  border-right: 1px solid #fff;
 }
 .groham-nav .nav > li.active a{background-color: #fda341;color: #fff !important;}
 .groham-nav .nav > li > a {
-  color: #878787;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 12px 40px;
-  font-family: 'Montserrat Light', 'Open Sans';
-  transition: all 0.23s ease 0s;
-  position: relative;
+      color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 12px 40px;
+    font-family: 'Montserrat Light', 'Open Sans';
+    transition: all 0.23s ease 0s;
+    position: relative;
+    font-weight: bold;
 }
 
 .groham-nav .nav > li > a:before {
@@ -454,7 +455,9 @@ select option {
 }
 
 .groham-nav .nav > li > a:hover {
-  color: #292929;
+      color: #fff;
+    background-color: #333;
+
 }
 
 .groham-nav .nav > li > a:hover:before {
@@ -497,6 +500,7 @@ select option {
 @media only screen and (min-width: 767px) {
   .navbar-nav {
     text-align: center !important;
+        padding-left: 10%;
   }
   .dropdown:hover .dropdown-menu {
     visibility: visible !important;
@@ -515,8 +519,8 @@ select option {
   margin: -5px 0 0 10px;
   vertical-align: middle;
   border-left: 0px solid transparent;
-  border-top: 1px solid #a0a0a0;
-  border-right: 1px solid #a0a0a0;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
   -moz-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
@@ -537,7 +541,7 @@ select option {
 .megamenu .container {
   position: relative;
 }
-.groham-nav .navbar-collapse{position: relative;}
+.groham-nav .navbar-collapse{position: relative; background-color: #fda341;}
 
 .home1 .megamenu .dropdown-menu,
 .home2 .megamenu .dropdown-menu,
@@ -1480,7 +1484,7 @@ span.close-icon {
 
 .header-middle {
   height: auto;
-  padding: 72px 0 ;
+  padding: 40px 0 26px ;
 }
 
 
@@ -1493,6 +1497,7 @@ span.close-icon {
   margin-right: 30px;
   width: 120px;
   float: left;
+      margin-top: -10px;
 }
 
 .header-middle .site-logo .cart-text {
@@ -3754,7 +3759,7 @@ span.close-icon {
     color: #fff;
 }
 .footer-bottom {
-  padding: 65px 0 24px;
+  padding: 40px 0 24px;
   text-align: center;
 }
 
@@ -3804,7 +3809,8 @@ span.close-icon {
 }
 
 .copyright {
-  padding: 15px 0;
+  padding: 15px 0 0;
+      background-color: #000;
 }
 
 .copyright p.text-center {
@@ -3812,8 +3818,8 @@ span.close-icon {
 }
 
 .copyright.home01 p {
-  color: #878787;
-  padding-bottom: 30px !important;
+  color: #fff;
+  padding-bottom: 18px !important;
 }
 
 .copyright.home02 {
